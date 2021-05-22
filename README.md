@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# DriverBot
-look at master branch
-=======
 # driverbot
 
 ## Project setup
