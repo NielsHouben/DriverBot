@@ -59,4 +59,5 @@ export default {
   margin: 0 auto;
 }
 </style>
+
 <style src="@vueform/slider/themes/default.css"></style>

@@ -24,7 +24,7 @@ export default {
   -webkit-appearance: none;
   height: 6vw;
   width: 4vw;
-  background: rgb(84, 216, 31);
+  background: rgb(255, 0, 0);
   border: 0.4vw solid black;
   border-radius: 10px;
 }
