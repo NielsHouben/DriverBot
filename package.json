@@ -10,6 +10,7 @@
     "gh-deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
+    "@heroku/buildpack-registry": "^1.0.1",
     "@vueform/slider": "^1.0.5",
     "chokidar": "^3.5.1",
     "core-js": "^3.13.1",
