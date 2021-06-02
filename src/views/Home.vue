@@ -57,6 +57,7 @@ export default {
     const mqttConnect = () => {
       mqtt.launch(state.user.id, (topic, source) => {
         console.log("message:", source, 'on topic:', topic)
+        //console.log('things see to wrok')
       })
       //mqtt.subscribe({ 'ping': 1 });
       // setInterval(() => {
