@@ -7,10 +7,10 @@ let client = {}
 export default {
     launch (id, callback) {
         const options = {
-            protocol: 'mqtts',
+            // protocol: 'mqtts',
             rejectUnauthorized: false,
-            port: "3883",
-            // port: "8883",
+            // port: "3883",
+            port: "8883",
             username: "niels.houben1@gmail.com",
             password: "ost123",
             clientId: id,
@@ -44,7 +44,7 @@ export default {
             -----END CERTIFICATE-----\
                 "
         }
-        client = mqtt.connect('mqtts://maqiatto.com:3883', options)
+        client = mqtt.connect('mqtt://maqiatto.com:3883', options)
         client.on('connect', (topic, message) => {
             callback(topic, message)
         })
@@ -60,7 +60,7 @@ export default {
         console.log('subscribe:', topic)
     },
     publish (topic, message) {
-        console.log(topic, message)
+        console.log(message)
         client.publish(topic, message, { qos: 1 })
     }
 }
